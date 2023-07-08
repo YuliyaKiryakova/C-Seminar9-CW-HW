@@ -12,7 +12,7 @@ int InputNum(string message)
 int SumNumbers(int start, int end)
 {
     if (start > end) return 0;
-    return start + SumNumbers(start + 1, end);
+    return start + SumNumbers(++start, end);
 }
 
 int numM = InputNum("Введите целое число M: ");

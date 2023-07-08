@@ -12,7 +12,7 @@ int InputNum(string message)
 string PrintNumbers(int start, int end)
 {
     if (start == end) return start.ToString();
-    return (start + " " + PrintNumbers(start - 1, end));
+    return (start + " " + PrintNumbers(--start, end));
 }
 
 int num = InputNum("Введите целое число: ");
